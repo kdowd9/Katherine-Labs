@@ -1,0 +1,64 @@
+[gd_scene load_steps=4 format=3 uid="uid://07y5rxhjc6d7"]
+
+[ext_resource type="Texture2D" uid="uid://b3wkfydsp2uft" path="res://icon.svg" id="1_luyhh"]
+[ext_resource type="PackedScene" uid="uid://j7pkw0pd2xby" path="res://lamp.tscn" id="2_seaqp"]
+[ext_resource type="Texture2D" uid="uid://c4jciq04cn1md" path="res://IMG_0621.PNG" id="3_ue8xl"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(910, 445)
+scale = Vector2(0.671875, 0.6171875)
+texture = ExtResource("1_luyhh")
+
+[node name="bed" type="ColorRect" parent="."]
+z_index = 1
+offset_left = 751.0
+offset_top = 488.0
+offset_right = 1053.0
+offset_bottom = 574.0
+color = Color(1, 0.29411766, 1, 1)
+
+[node name="bedleg" type="ColorRect" parent="bed"]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 86.0
+offset_right = 18.0
+offset_bottom = 125.0
+color = Color(0.2509804, 0.20392157, 0.14509805, 1)
+
+[node name="bedleg2" type="ColorRect" parent="bed"]
+layout_mode = 0
+offset_left = 283.0
+offset_top = 86.0
+offset_right = 302.0
+offset_bottom = 123.0
+color = Color(0.25100502, 0.2035313, 0.14508995, 1)
+
+[node name="pillow" type="ColorRect" parent="bed"]
+layout_mode = 0
+offset_top = -23.0
+offset_right = 65.0
+
+[node name="lamp" parent="." instance=ExtResource("2_seaqp")]
+offset_left = 716.0
+offset_top = 294.0
+offset_right = 833.0
+offset_bottom = 381.0
+
+[node name="lamp2" parent="." instance=ExtResource("2_seaqp")]
+offset_left = 41.0
+offset_top = 219.0
+offset_right = 158.0
+offset_bottom = 306.0
+
+[node name="lamp3" parent="." instance=ExtResource("2_seaqp")]
+offset_left = 464.0
+offset_top = 151.0
+offset_right = 581.0
+offset_bottom = 238.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(327.50003, 469)
+scale = Vector2(0.3505859, 0.34375)
+texture = ExtResource("3_ue8xl")
